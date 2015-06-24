@@ -1,0 +1,378 @@
+/**
+ * Main style file, contains all page styles, on top of the bootstrap css
+ *
+ * @author D. Tiems (dennis-at-bigbase-dot-nl)
+ * @version 2.0.0 - March 17th 2014
+ */
+
+/* Specific fonts */
+* {
+	font-family:arial, sans-serif;
+}
+h1,h2,h3,h4 {
+	font-family:'Ubuntu', sans-serif;
+	font-weight:bold;
+}
+h5,h6 {
+	font-family:'McLaren', cursive;
+	color:#999;
+}
+
+/* Always use nice dots for password fields */
+input[type=password] {
+	font-family:verdana !important;
+}
+
+/* Print adjustments */
+@media print {
+	* {
+		font-family:Arial !important;
+	}
+}
+
+/* Message overlay background */
+.modal-backdrop {
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+
+/* Page and menu layout */
+.header-shadow {
+	position:absolute;
+	width:100%;
+	overflow:hidden;
+	height:40px;
+	-moz-box-shadow: 0 0 10px #999;
+	-webkit-box-shadow: 0 0 10px #999;
+	box-shadow: 0 0 10px #999;
+}
+.header-top {
+	margin-top:10px;
+}
+.header-action {
+	margin:10px 0 0 10px;
+}
+.header-search {
+	margin:auto;
+}
+.navbar .nav.navbar-left {
+	margin-left:-15px;
+}
+.navbar .nav > li > .dropdown-menu:after, 
+.navbar .nav > li >.dropdown-menu:before,
+.navbar .nav > li >.dropdown-menu {
+	content: none !important;
+}
+.navbar .nav > li > .dropdown-menu {
+	border:none;
+}
+.navbar .nav > li > .dropdown-menu li {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.header-nav {
+	margin:0;
+	border:0;
+}
+@media (max-width: 768px) {
+  .header-nav li {
+    display: inline-block;
+  }
+	.header-search-nav li { 
+    display: inline-block;
+		margin-left:15px;
+	}
+}
+.header-nav .nav li {
+	font-size:12px;
+}
+.header-nav.navbar .nav > li > a {
+	padding:10px 0 10px 20px;
+	color:#777;
+}
+.header-nav.navbar .nav > li > a:hover,
+.header-nav.navbar .nav > li > a:focus {
+	background-color:transparent;
+	color:#000;
+}
+.header-nav.navbar .nav > .active > a, 
+.header-nav.navbar .nav > .active > a:hover, 
+.header-nav.navbar .nav > .active > a:focus {
+	background-color:transparent;
+	color:#000;
+  -webkit-box-shadow:none;
+     -moz-box-shadow:none;
+          box-shadow:none;
+}
+.header-search-nav {
+	margin-bottom:0;
+	min-height:20px;
+}
+.header-search-nav .nav li {
+	font-size:12px;
+}
+.header-search-nav.navbar .nav > li > a {
+	color:#777;
+	padding: 10px 20px 10px 0;
+}
+.header-search-nav.navbar .nav > li > a:hover,
+.header-search-nav.navbar .nav > li > a:focus {
+	background-color:transparent;
+	color:#000;
+}
+.header-search-nav.navbar .nav > .active > a, 
+.header-search-nav.navbar .nav > .active > a:hover, 
+.header-search-nav.navbar .nav > .active > a:focus {
+	background-color:transparent;
+	color:#000;
+  -webkit-box-shadow:none;
+     -moz-box-shadow:none;
+          box-shadow:none;
+}
+.main-nav.navbar {
+	min-height:20px;
+}
+.main-nav.navbar .nav > li > a {
+  text-shadow:none;
+	padding:10px 15px;
+}
+.main-nav.navbar > .navbar-inner > .container > a.btn-navbar {
+  background-image:none;
+	background-color:#3a87ad;
+	padding:4px 13px 4px 13px;
+	margin-bottom:5px;
+}
+.main-nav.navbar .nav > .active > a,
+.main-nav.navbar .nav > li > a:hover,
+.main-nav.navbar .nav > .active > a:hover {
+	background-color:#3a87ad;
+	color:#fff;
+  -webkit-box-shadow:none;
+     -moz-box-shadow:none;
+          box-shadow:none;
+}
+.main-nav.navbar .nav > .active > a > .caret,
+.main-nav.navbar .nav > li > a:hover > .caret,
+.main-nav.navbar .nav > .active > a:hover > .caret {
+	border-top-color: #fff !important;
+	border-bottom-color: #fff !important;
+}
+.nav.nav-list > li > a {
+	padding:5px 10px;
+	margin:0 -10px;
+}
+.nav.nav-list .nav-header {
+	font-weight:bold;
+	padding:0 0 10px 0;
+	margin-bottom:10px;
+	border-bottom:1px solid #e3e3e3;
+}
+.dropdown-content {
+	/* For using a div in a dropdown to show some info */
+	padding:0 20px 5px 20px;
+	width:200px;
+}
+.dropdown-content-wide {
+	width:300px;
+}
+.dropdown-content form,
+.dropdown-content address {
+	padding:0;
+	margin:0;
+}
+.social-icons {
+	padding:20px 0 0 10px;
+	width:120px
+}
+.input-micro {
+	width:20px;
+	text-align:center;
+}
+.table-order .input-group {
+	max-width:240px;
+}
+.nav-tabs {
+	margin-bottom:20px;
+}
+td[align="right"] {
+	/* Reset to correct value */
+	text-align:right;
+}
+td[align="center"] {
+	/* Reset to correct value */
+	text-align:center;
+}
+
+/* Nivo slider */
+.theme-bar.slider-wrapper {
+	border: 0 !important;
+	border-radius: 4px;
+}
+
+/* Label style */
+.label.label-info {
+	background-color:#3a87ad;
+}
+
+.label.label-important {
+	background-color:#d9534f;
+}
+
+/* Alert style */
+.alert {
+	padding:10px;
+}
+
+/* Well style */
+.well {
+	border:0;
+	margin-top:20px;
+	height:360px;
+  	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+.well.well-small {
+	padding: 10px;
+}
+.well.well-small ul.nav-list {
+	background-color:#ffffff;
+	border-radius: 2px;
+	padding:14px;
+}
+
+/* Article style */
+.article img {
+	float:right;
+	width:40%;
+}
+
+/* Product lists */
+.product-list-inline-small {
+	padding-left:0;
+}
+.product-list-inline-small li {
+	list-style:none;
+}
+
+.product-list-inline-small .price {
+	font-size:125%;
+	padding:5px 10px 5px 10px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	/* Use for rotating price (IE9+) */
+	-webkit-transform:rotate(355deg);
+	-moz-transform:rotate(355deg);
+	-o-transform:rotate(355deg);
+	-ms-transform:rotate(355deg);
+}
+.product-list-inline-large .thumbnail {
+	padding:10px;
+	margin-bottom:30px;
+	border:none;
+}
+
+.product-list-inline-large .thumbnail .price {
+	font-size:200%;
+	line-height:150%;
+	position:absolute;
+	z-index:10;
+	margin-left:-15px;
+	margin-top:-10px;
+	width:115px;
+	text-align:center;
+	padding-left:5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	/* Use for rotating price (IE9+) */
+	-webkit-transform:rotate(350deg);
+	-moz-transform:rotate(350deg);
+	-o-transform:rotate(350deg);
+	-ms-transform:rotate(350deg);
+}
+.product-list-inline-large .thumbnail .price.price-over {
+	/* Use for rotating price (IE9+) */
+	-webkit-transform:rotate(355deg);
+	-moz-transform:rotate(355deg);
+	-o-transform:rotate(355deg);
+	-ms-transform:rotate(355deg);
+}
+.product-list-inline-large .thumbnail .price sup {
+	font-size:60%;
+}
+.product-list-inline-large .thumbnail .caption {
+	text-align:center;
+}
+.product-list-inline-large .thumbnail .btn-block {
+	margin:0 0 -20px 0;
+}
+
+/* Product detail */
+.product-detail .price {
+	font-size:400%;
+	line-height:150%;
+	position:absolute;
+	z-index:10;
+	text-align:center;
+	padding-left:10px;
+	padding-right:10px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	/* Use for rotating price (IE9+) */
+	-webkit-transform:rotate(5deg);
+	-moz-transform:rotate(5deg);
+	-o-transform:rotate(5deg);
+	-ms-transform:rotate(5deg);
+}
+
+.product-detail .well .btn {
+	
+	margin-bottom:15px;
+}
+
+/* Order process */
+#step1 table tr td:first-child > img {
+	max-width:75px;
+}
+#comments {
+	width:90%;
+}
+
+/* Footer links */
+.footer ul.unstyled {
+	font-size:80%;
+	line-height:20px;
+	padding-left:0;
+	margin-bottom:20px;
+	list-style-type:none;
+}
+.footer .footer-title {
+	font-weight:bold;
+}
+
+/* Google Maps */
+.googlemap {
+	height:300px;
+	width:100%;
+}
+
+/* Forms */
+.help-block {
+	font-style:italic;
+	color:#999;
+}
+.nav .form-search {
+	margin-bottom:10px;
+}
+
+.nav-list span.glyphicon {
+	margin-right:10px;
+	color:#fff;
+}
+
+.nav-list .active span.glyphicon {
+	margin-right:10px;
+	color:#428bca;
+}
